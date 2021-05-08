@@ -367,13 +367,13 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.navbar__menu-button {
-  display: none;
 }
 
 .navbar-bottom {
@@ -467,7 +467,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    min-width: 340px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -476,6 +475,9 @@ template {
   .navbar-menu__list {
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+  .search-input {
+    width: 340px;
   }
   .logo__image {
     width: 133px;
@@ -497,6 +499,7 @@ template {
     flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #fff;
     cursor: pointer;

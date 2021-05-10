@@ -14,7 +14,7 @@
     &-menu__link
       font-size: 12px
       line-height: 15px 
-    &-menu__list
+    &-menu
       padding-top: 22px
       padding-bottom: 22px 
   .search
@@ -27,19 +27,19 @@
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &-menu__list, &__user
-      display: none   
+    &__search, &-menu, &__user
+      display: none  
   .menu
     &-button
       display: flex
+      align-items: center
       justify-content: space-between
-      align-content: center
-      flex-direction: column 
+      flex-direction: column
       width: 16px
       height: 11px
       padding: 0
       border: none
-      background-color: #fff
+      background-color: $light
       cursor: pointer
       &__line
         width: 16px

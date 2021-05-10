@@ -1,5 +1,5 @@
 .navbar
-  background-color: #ffffff
+  background-color: $light
   &-top
     display: flex
     align-items: center
@@ -13,18 +13,19 @@
     margin-left: 108px
   &-bottom
     background-color: $dark
-  &-menu__list
+  &-menu
     list-style-type: none
     margin: 0
     padding: 31px 0
     display: flex
     align-items: center
     justify-content: space-between
-  &-menu__link
-    color: $light
-    text-decoration: none
-    text-transform: uppercase
-    font-size: 14px
+    &__link
+      color: $light
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 18px
 .logo__image
   width: 177px
 .search

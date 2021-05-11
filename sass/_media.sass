@@ -22,36 +22,29 @@
       width: 340px
   .logo__image
     width: 133px
+  .stars
+    flex-basis: content
 @media (max-width: 768px)
   .container
-    max-width: 576px
+    max-width: 700px
     width: 92%
   .logo
     min-width: 132px
     margin-right: 47px   
   .navbar 
     &__search
-      max-width: 340px 
+      width: 340px 
       margin-right: 73px  
   .menu
     &-button
-      display: flex
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      width: 16px
-      height: 11px
-      padding: 0
-      border: none
-      background-color: $light
-      cursor: pointer
+      display: none
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
         display: none
   .stars
-    flex-basis: content
+    flex-basis: auto
   .hotel
     &-name
       flex-basis: 100%
@@ -72,11 +65,23 @@
   .logo__image
     width: 99px
   .navbar
+    &-top
+      padding-top: 27px
+      padding-bottom: 27px
     &__search, &-menu, &__user
       display: none 
   .menu
     &-button
-      &__line
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
         width: 16px
-        height: 1px
-        background-color: $text-color
+        height: 11px
+        padding: 0
+        border: none
+        color: $text-color
+        background-color: $light
+        cursor: pointer
+  .hotel
+    padding-top: 0

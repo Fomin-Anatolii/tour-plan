@@ -453,7 +453,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -520,7 +520,13 @@ template {
   line-height: 18px;
 }
 
+.rating__counter-small {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 .rating__text {
+  font-weight: 600;
   font-size: 8px;
   line-height: 10px;
 }

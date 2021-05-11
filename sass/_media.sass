@@ -1,6 +1,6 @@
-@media (max-width: 1200px) 
+@media (max-width: 1200px)
   .container
-    max-width: 960px  
+    max-width: 960px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -15,10 +15,10 @@
       margin-left: auto
     &-menu__link
       font-size: 12px
-      line-height: 15px 
+      line-height: 15px
     &-menu
       padding-top: 22px
-      padding-bottom: 22px 
+      padding-bottom: 22px
   .search
     &-input
       width: 340px
@@ -28,31 +28,27 @@
     flex-basis: content
 @media (max-width: 768px)
   .container
-    max-width: 700px
+    min-width: 700px
     width: 92%
   .logo
     min-width: 132px
-    margin-right: 47px   
-  .navbar 
+    margin-right: 47px
+  .navbar
     &__search, &-menu, &__user
-      display: none 
-    &-top
-      &__menu-button
-        display: flex
+      display: flex 
   .menu-button
-      width: 16px
-      height: 11px
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      padding: 0
-      border: none
-      background-color: $light
-      cursor: pointer
+    width: 16px
+    height: 11px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    padding: 0
+    border: none
+    background-color: $light
     &__line
       width: 16px
       height: 1px
-      background-color: $text-color  
+      background-color: $text-color
   .stars
     flex-basis: content
   .hotel
@@ -60,7 +56,7 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
-    &-info
+    &-info  
       &__text
         width: 100%
       &__name
@@ -69,16 +65,16 @@
       &__rating
         display: none
       &__offer
-        order: -1
+        order: -1px
         margin-left: 0
 @media (max-width: 576px)
-  .logo__image
+  .logo
     width: 99px
   .navbar
     &-top
       padding-top: 27px
       padding-bottom: 27px
     &__search, &-menu, &__user
-      display: none 
+      display: none
   .hotel
     padding-top: 0

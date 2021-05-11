@@ -22,13 +22,17 @@
       width: 340px
   .logo__image
     width: 133px
-@media (max-width: 758px)
+@media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
-  .navbar
-    &__search, &-menu, &__user
-      display: none  
+  .logo
+    min-width: 132px
+    margin-right: 47px   
+  .navbar 
+    &__search
+      max-width: 340px 
+      margin-right: 73px  
   .menu
     &-button
       display: flex
@@ -45,6 +49,7 @@
         width: 16px
         height: 1px
         background-color: $text-color
+        display: none
   .stars
     flex-basis: content
   .hotel
@@ -66,3 +71,12 @@
 @media (max-width: 576px)
   .logo__image
     width: 99px
+  .navbar
+    &__search, &-menu, &__user
+      display: none 
+  .menu
+    &-button
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color

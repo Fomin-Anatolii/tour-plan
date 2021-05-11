@@ -6,9 +6,11 @@
     max-width: 700px
   .navbar
     &-top
-      max-width: 91%
+      max-width: 100%
       padding-top: 30px
       padding-bottom: 30px
+      &__menu-bottom
+        display: none
     &__search
       margin-left: auto
     &-menu__link
@@ -32,17 +34,16 @@
     min-width: 132px
     margin-right: 47px   
   .navbar 
-    &__search
-      width: 340px 
-      margin-right: 73px  
+    &__search, &-menu, &__user
+      display: none 
+    &-top
+      &__menu-bottom
+        dispaly: none 
   .menu
-    &-button
-      display: none
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
-        display: none
   .stars
     flex-basis: auto
   .hotel
@@ -68,10 +69,8 @@
     &-top
       padding-top: 27px
       padding-bottom: 27px
-    &__search, &-menu, &__user
-      display: none 
-  .menu
-    &-button
+    &__menu
+      &-button
         display: flex
         align-items: center
         justify-content: space-between
@@ -83,5 +82,7 @@
         color: $text-color
         background-color: $light
         cursor: pointer
+    &__search, &-menu, &__user
+      display: none 
   .hotel
     padding-top: 0

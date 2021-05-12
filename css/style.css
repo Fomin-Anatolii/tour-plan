@@ -5,7 +5,6 @@
 body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
-  color: #333333;
 }
 
 .container {
@@ -382,10 +381,10 @@ template {
 }
 
 .navbar-menu {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 31px 0;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -393,12 +392,12 @@ template {
 .navbar-menu__link {
   color: #FFFFFF;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
-.logo__image {
+.logo {
   width: 177px;
 }
 
@@ -411,8 +410,8 @@ template {
 }
 
 .search__input {
-  width: 350px;
   height: 100%;
+  width: 350px;
   padding-left: 23px;
   padding-right: 75px;
   background-color: #F5FAFE;
@@ -426,16 +425,17 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
   width: 65px;
-  border: none;
+  height: 100%;
   background-color: #EC1F46;
+  border: none;
 }
 
 .user {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #333333;
 }
 
 .user__avatar {
@@ -446,10 +446,34 @@ template {
 }
 
 .user__name {
-  color: #333333;
+  margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 18px;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.breadcrumb__item {
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+}
+
+.breadcrumb__item:not(:last-child) ::after {
+  content: '/';
+  margin-right: 4px;
+  margin-left: 2px;
 }
 
 .hotel {
@@ -464,22 +488,15 @@ template {
 }
 
 .hotel-info__offer {
+  margin-top: 4px;
   margin-left: 14px;
-  margin-top: 4px;
+  order: 0;
 }
 
-.hotel-info__name {
-  margin-top: 4px;
-  margin-bottom: 0;
-}
-
-.hotel-info__description {
+.hotel-description {
+  font-size: 12px;
+  line-height: 15px;
   margin: 0;
-}
-
-.hotel-name {
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .hotel-wrapper {
@@ -488,46 +505,38 @@ template {
   align-items: center;
 }
 
-.hotel-description {
-  font-size: 12px;
-  line-height: 15px;
+.hotel-name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
 .stars {
   flex-basis: 100%;
 }
 
-.stars-image {
-  margin-right: -3px;
+.stars-icon {
+  margin-right: -2px;
 }
 
 .offer {
   font-size: 10px;
   line-height: 13px;
   padding: 4px 9px;
-  background-color: #EC1F46;
   border-radius: 3px;
   color: #FFFFFF;
+  background-color: #EC1F46;
 }
 
 .rating {
+  text-align: center;
   max-width: 65px;
   min-height: 45px;
-  text-align: center;
-  color: #FFFFFF;
   background-color: #EC1F46;
   border-radius: 4px;
-}
-
-.rating__counter {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.rating__counter-small {
-  font-size: 10px;
-  line-height: 12px;
+  color: #FFFFFF;
 }
 
 .rating__text {
@@ -536,27 +545,16 @@ template {
   line-height: 10px;
 }
 
-.breadcrumb-list {
-  display: flex;
-  align-items: center;
-  padding: 18px 0;
-  margin: 0;
-  list-style: none;
+.rating__counter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.breadcrumb-list__item {
+.rating__counter-small {
+  font-weight: bold;
   font-size: 10px;
   line-height: 13px;
-}
-
-.breadcrumb-list__item:not(:last-child)::after {
-  content: '/';
-  margin-right: 4px;
-}
-
-.breadcrumb-list__link {
-  text-decoration: none;
-  color: inherit;
 }
 
 @media (max-width: 1200px) {
@@ -569,101 +567,87 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo__image {
+    width: 132px;
+  }
+  .search__input {
+    width: 340px;
+  }
+  .navbar__search {
+    margin-right: 78px;
+    margin-left: 48px;
+  }
   .navbar-top {
-    max-width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar-top__menu-bottom {
-    display: none;
-  }
-  .navbar__search {
-    margin-left: auto;
+  .navbar-menu {
+    padding: 22px 0;
+    justify-content: space-evenly;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
-  .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-  .search-input {
-    width: 340px;
-  }
-  .logo__image {
-    width: 133px;
-  }
-  .stars {
-    flex-basis: content;
-  }
 }
 
 @media (max-width: 768px) {
   .container {
-    min-width: 700px;
+    max-width: 710px;
     width: 92%;
   }
-  .logo {
-    min-width: 132px;
-    margin-right: 47px;
+  .logo__image {
+    width: 99px;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
-    display: flex;
+    display: none;
   }
   .menu-button {
-    width: 16px;
-    height: 11px;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     padding: 0;
+    width: 16px;
+    height: 11px;
     border: none;
     background-color: #FFFFFF;
+    cursor: pointer;
   }
   .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
   }
-  .stars {
-    flex-basis: content;
+  .hotel-info__text {
+    width: 100%;
   }
-  .hotel-name {
+  .hotel-info__offer {
+    order: -1;
+    margin-left: 0;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__name {
     flex-basis: 100%;
   }
   .hotel-wrapper {
     justify-content: space-between;
   }
-  .hotel-info__text {
-    width: 100%;
-  }
-  .hotel-info__name {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .hotel-info__rating {
-    display: none;
-  }
-  .hotel-info__offer {
-    order: -1px;
-    margin-left: 0;
+  .stars {
+    flex-basis: auto;
   }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
-  .navbar-top {
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-  .navbar__search, .navbar-menu, .navbar__user {
-    display: none;
-  }
-  .hotel {
-    padding-top: 0;
+@media (max-width: 567px) {
+  max-width: 99px;
+  .stars {
+    flex-basis: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

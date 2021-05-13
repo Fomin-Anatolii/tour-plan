@@ -9,3 +9,9 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: ".slider-button-prev",
   },
 });
+var mySwiper = new Swiper(".swiper-container", {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});

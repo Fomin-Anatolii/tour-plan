@@ -8,6 +8,9 @@ const swiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button-next",
     prevEl: ".slider-button-prev",
   },
+  autoplay: {
+    delay: 4000,
+  },
 });
 var mySwiper = new Swiper(".swiper-container", {
   keyboard: {

@@ -518,7 +518,12 @@ template {
   font-family: 'Nunito', sans-serif;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+}
+
+.hotel-mapping {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .stars {

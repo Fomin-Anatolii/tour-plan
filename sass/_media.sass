@@ -22,12 +22,14 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .slider
+    width: 700px
 @media (max-width: 768px)
-  .container  
+  .container
     max-width: 710px
     width: 92%
   .logo__image
-    width: 99px  
+    width: 99px
   .navbar
     &-top
       padding-top: 25px
@@ -65,13 +67,22 @@
       justify-content: space-between
   .stars
     flex-basis: auto
+  .slider
+    max-width: 278px
+    height: 179px
+    object-fit: cover
+    &-button
+      display: none
+  .swiper-container
+    &::after
+      display: none
 @media (max-width: 567px)
   .logo__image
-  max-width: 99px
+    max-width: 99px
   .stars
     flex-basis: 30%
   .hotel
-    padding-top: 4px  
+    padding-top: 4px
     &-info
       &__name
-        margin-top: 8px 
+        margin-top: 8px

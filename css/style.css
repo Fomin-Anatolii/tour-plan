@@ -639,6 +639,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .slider {
+    width: 700px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -692,10 +695,23 @@ template {
   .stars {
     flex-basis: auto;
   }
+  .slider {
+    max-width: 278px;
+    height: 179px;
+    object-fit: cover;
+  }
+  .slider-button {
+    display: none;
+  }
+  .swiper-container::after {
+    display: none;
+  }
 }
 
 @media (max-width: 567px) {
-  max-width: 99px;
+  .logo__image {
+    max-width: 99px;
+  }
   .stars {
     flex-basis: 30%;
   }
